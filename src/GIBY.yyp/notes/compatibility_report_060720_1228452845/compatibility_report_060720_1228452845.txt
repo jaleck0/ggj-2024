@@ -1,0 +1,141 @@
+Converting GML script: ${project_dir}\scripts\approach\approach.gml
+Converted description /// @description approach(current, target, amount)/// @param current
+/// @param  target
+/// @param  amount
+
+Converting GML script: ${project_dir}\scripts\instance_place_multiple\instance_place_multiple.gml
+Converted description /// @description instance_place_multiple(x, y, instance)/// @param x
+/// @param  y
+/// @param  instance
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_right\decimal_bbox_right.gml
+Converted description /// @description decimal_bbox_right()
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_bottom\decimal_bbox_bottom.gml
+Converted description /// @description decimal_bbox_bottom()
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_left\decimal_bbox_left.gml
+Converted description /// @description decimal_bbox_left()
+
+Converting GML script: ${project_dir}\scripts\decimal_bbox_top\decimal_bbox_top.gml
+Converted description /// @description decimal_bbox_top()
+
+Converting GML script: ${project_dir}\scripts\place_meeting_exception\place_meeting_exception.gml
+Converted description /// @description place_meeting_exception(x, y, obj, exception)/// @param x
+/// @param  y
+/// @param  obj
+/// @param  exception
+
+Converting GML script: ${project_dir}\scripts\initialize_movement_entity\initialize_movement_entity.gml
+Converted description /// @description initialize_movement_entity(gravity, friction, air_resistance, bounce, collision_object)/// @param gravity
+/// @param  friction
+/// @param  air_resistance
+/// @param  bounce
+/// @param  collision_object
+
+Converting GML script: ${project_dir}\scripts\move_movement_entity\move_movement_entity.gml
+Converted description /// @description move_movement_entity()
+
+Converting GML script: ${project_dir}\scripts\move_solid_entity\move_solid_entity.gml
+Converted description /// @description move_solid_entity(push_object)/// @param push_object
+
+Converting GML script: ${project_dir}\scripts\add_movement_horizontal_vertical\add_movement_horizontal_vertical.gml
+Converted description /// @description add_movement_horizontal_vertical(hacceleration, vacceleration)/// @param hacceleration
+/// @param  vacceleration
+
+Converting GML script: ${project_dir}\scripts\set_movement_horizontal_vertical\set_movement_horizontal_vertical.gml
+Converted description /// @description set_movement_horizontal_vertical(hspeed, vspeed)/// @param hspeed
+/// @param  vspeed
+
+Converting GML script: ${project_dir}\scripts\add_movement_direction_acceleration\add_movement_direction_acceleration.gml
+Converted description /// @description add_movement_direction_acceleration(direction, acceleration);/// @param direction
+/// @param  acceleration
+
+Converting GML script: ${project_dir}\scripts\set_movement_direction_speed\set_movement_direction_speed.gml
+Converted description /// @description set_movement_direction_speed(direction, speed);/// @param direction
+/// @param  speed
+
+Converting GML script: ${project_dir}\scripts\add_movement_horizontal_vertical_maxspeed\add_movement_horizontal_vertical_maxspeed.gml
+Converted description /// @description add_movement_horizontal_vertical_maxspeed(hacceleration, vacceleration, maxhspeed, maxvspeed)/// @param hacceleration
+/// @param  vacceleration
+/// @param  maxhspeed
+/// @param  maxvspeed
+
+Converting GML script: ${project_dir}\scripts\warp_movement_entity\warp_movement_entity.gml
+Converted description /// @description warp_movement_entity(xwarp, vwarp)/// @param xwarp
+/// @param  vwarp
+
+Converting GML script: ${project_dir}\scripts\set_movement_collision_object\set_movement_collision_object.gml
+Converted description /// @description set_movement_collision_object(object)/// @param object
+
+Converting GML script: ${project_dir}\scripts\set_movement_friction\set_movement_friction.gml
+Converted description /// @description set_movement_friction(amount)/// @param amount
+
+Converting GML script: ${project_dir}\scripts\set_movement_bounce\set_movement_bounce.gml
+Converted description /// @description set_movement_bounce(amount)/// @param amount
+
+Converting GML script: ${project_dir}\scripts\set_movement_gravity\set_movement_gravity.gml
+Converted description /// @description set_movement_grav(amount)/// @param amount
+
+Converting GML script: ${project_dir}\scripts\enable_movement_platform_actions\enable_movement_platform_actions.gml
+Converted description /// @description enable_movement_platform_actions(acceleration, run_speed, jump_height, right_input, left_input, jump_input, jump_release_input)/// @param acceleration
+/// @param  run_speed
+/// @param  jump_height
+/// @param  right_input
+/// @param  left_input
+/// @param  jump_input
+/// @param  jump_release_input
+
+Converting GML script: ${project_dir}\scripts\enable_movement_jump\enable_movement_jump.gml
+Converted description /// @description enable_movement_jump(height, input, release_input)/// @param height
+/// @param  input
+/// @param  release_input
+
+Converting GML script: ${project_dir}\scripts\enable_movement_run\enable_movement_run.gml
+Converted description /// @description enable_movement_run(acceleration, max_speed, right_input, left_input)/// @param acceleration
+/// @param  max_speed
+/// @param  right_input
+/// @param  left_input
+
+Converting GML script: ${project_dir}\scripts\enable_movement_run_axis\enable_movement_run_axis.gml
+Converted description /// @description enable_movement_run_axis(acceleration, max_speed, horizontal_axis)/// @param acceleration
+/// @param  max_speed
+/// @param  horizontal_axis
+
+Converting GML script: ${project_dir}\scripts\enable_movement_air_jump\enable_movement_air_jump.gml
+Converted description /// @description enable_movement_air_jump(height, input)/// @param height
+/// @param  input
+
+Converting GML script: ${project_dir}\scripts\enable_movement_wall_jump\enable_movement_wall_jump.gml
+Converted description /// @description enable_movement_wall_jump(height, distance, jump_input, right_input, left_input)/// @param height
+/// @param  distance
+/// @param  jump_input
+/// @param  right_input
+/// @param  left_input
+
+Converting GML script: ${project_dir}\scripts\animation_end\animation_end.gml
+Converted description /// @description animation_end()
+
+Converting GML script: ${project_dir}\scripts\animation_hit_frame\animation_hit_frame.gml
+Converted description /// @description animation_hit_frame(frame)/// @param frame
+
+Converting GML script: ${project_dir}\scripts\enable_movement_platform_sprites\enable_movement_platform_sprites.gml
+Converted description /// @description enable_movement_platform_sprites(idle_sprite, walk_sprite, jump_sprite, walk_animation_speed)/// @param idle_sprite
+/// @param  walk_sprite
+/// @param  jump_sprite
+/// @param  walk_animation_speed
+
+Converting GML script: ${project_dir}\objects\o_player\Create_0.gml
+Converted description /// @description  Initialize the player
+
+Converting GML script: ${project_dir}\objects\o_player\Step_0.gml
+Converted description /// @description  Move the Player
+
+Converting GML script: ${project_dir}\objects\o_moving_solid\Create_0.gml
+Converted description /// @description  Initialize the moving solid
+
+Converting GML script: ${project_dir}\objects\o_moving_solid\Step_2.gml
+Converted description /// @description  Move the solid entity
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Game speed set to 60
