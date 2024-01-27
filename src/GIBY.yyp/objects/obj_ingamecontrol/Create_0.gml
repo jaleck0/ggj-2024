@@ -1,11 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.mood = 200;
+global.mood = 100;
 
 global.moodindex = MOODS.NEUTRAL;
 
 global.depressionspeed = 0.1;
 global.moodstrings = array_create(5, ["Depressed", "Sad", "Neutral", "Happy", "Manic"]);
+
+global.portrait_sprites[0] = spr_portrait_depressed;
+global.portrait_sprites[1] = spr_portrait_sad;
+global.portrait_sprites[2] = spr_portrait_neutral;
+global.portrait_sprites[3] = spr_portrait_happy;
+global.portrait_sprites[4] = spr_portrait_manic;
+
+port_fram = 0;
 
 global.moodcolors[0,0] = BLUE5//YELLOW1
 global.moodcolors[0,1] = BLUE6//YELLOW2

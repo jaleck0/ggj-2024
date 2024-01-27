@@ -45,6 +45,24 @@ if (global.RleftP or global.RrighttP) and !(dashing) and dready and weapon=0 {
 	}
 } 
 
+if global.RdownP and !(dashing) and dready and weapon=0 
+{
+	vsp[0]=0
+	vsp[1]=0
+	hsp[0]=0
+	hsp[1]=0
+	dashing=true;
+	timer=dtime;
+	set_movement_direction_speed(270,13)
+	dready=false
+	alarm[0]=dtimer
+	pounding = true
+	set_movement_gravity(0.4)
+	for (var i=0;i<=16;i++) {
+		add_particle(spr_part,0,x+random_range(-16,16),y+random_range(-16,16),-random(hsp[1])/8,-random(vsp[1])/8,0,0.8+random(.5),c_white,1,false);
+	}
+} 
+
 //if mouse_check_button_pressed(mb_right) and weapon>0 
 if global.RdownP and weapon>0 
 {
@@ -79,8 +97,28 @@ if (timer <= 0 and place_meeting(x,y+1,collision_object)) or place_meeting(x+hsp
 
 if timer>0{ 
 	timer--
+} 
+
+
+if place_meeting(x+1,y+1,obj_breakable) and pounding
+{
+	var thing=instance_place(x+1,y+1,obj_breakable)
+	with thing
+	{
+		instance_destroy()
+	}
+	pounding = false
 }
 
+if place_meeting(x-1,y+1,obj_breakable) and pounding
+{
+	var thing=instance_place(x-1,y+1,obj_breakable)
+	with thing
+	{
+		instance_destroy()
+	}
+	pounding = false
+}
 
 
 if dashing {
@@ -88,7 +126,7 @@ if dashing {
 	instance_create_layer(x,y,layer,obj_trail)
 	
 }else{
-	
+	pounding = false
 	// Enable platform movement actions
 	//enable_movement_platform_actions(.5, 4, 9, keyboard_check(ord("D")), keyboard_check(ord("A")), keyboard_check_pressed(vk_space), keyboard_check_released(vk_space));
 	enable_movement_platform_actions(.5, 4, 9, global.LrightH, global.LleftH, sign(global.RupP + global.LupP), sign(global.RupR + global.LupR));

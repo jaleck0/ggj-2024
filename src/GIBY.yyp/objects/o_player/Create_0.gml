@@ -3,6 +3,8 @@ initialize_movement_entity(.5, 1, .1, .4, o_solid);
 dir=0//point_direction(x,y,mouse_x,mouse_y)
 flp = 1
 throwangleUp = 20
+pounding = false;
+
 
 dashing=false
 dready=true
