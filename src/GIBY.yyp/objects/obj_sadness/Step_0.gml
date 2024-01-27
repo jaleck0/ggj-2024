@@ -7,6 +7,10 @@ if point_distance(x,y,o_player.x, o_player.y) < 64
 	tracked = true;
 }
 
+if global.mood < 40
+{
+	tracked	= false
+}
 
 if tracked 
 {
