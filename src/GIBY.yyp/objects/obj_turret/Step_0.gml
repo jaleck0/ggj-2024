@@ -3,4 +3,8 @@
 move_movement_entity();
 image_xscale = flp
 
+if hp <=0
+{
+	instance_destroy()
+}
 
