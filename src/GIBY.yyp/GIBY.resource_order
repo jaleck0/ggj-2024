@@ -1,12 +1,12 @@
 {
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":2,"path":"folders/Animation Curves.yy",},
-    {"name":"Extensions","order":13,"path":"folders/Extensions.yy",},
+    {"name":"Extensions","order":12,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":8,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":9,"path":"folders/Notes.yy",},
-    {"name":"Objects","order":10,"path":"folders/Objects.yy",},
-    {"name":"Paths","order":11,"path":"folders/Paths.yy",},
-    {"name":"Rooms","order":12,"path":"folders/Rooms.yy",},
+    {"name":"Objects","order":13,"path":"folders/Objects.yy",},
+    {"name":"Paths","order":10,"path":"folders/Paths.yy",},
+    {"name":"Rooms","order":11,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":7,"path":"folders/Scripts.yy",},
     {"name":"Action Scripts","order":1,"path":"folders/Scripts/Action Scripts.yy",},
     {"name":"Helper Scripts","order":2,"path":"folders/Scripts/Helper Scripts.yy",},
