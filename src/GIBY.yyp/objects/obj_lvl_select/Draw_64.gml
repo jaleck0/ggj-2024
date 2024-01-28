@@ -24,3 +24,12 @@ for (i = 0; i < 3; i++)
 		draw_sprite(Sprite3839,0,332,102+i*36);
 	}
 }
+if global.goddead
+{
+draw_sprite(Sprite38,0,301,210);
+}
+
+if global.devdead
+{
+draw_sprite(Sprite3839,0,301,246);
+}

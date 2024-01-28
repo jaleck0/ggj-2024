@@ -93,18 +93,22 @@ if (global.RleftP or global.RrighttP) and weapon>0 and !firing
 	}
 }
 
-if distance_to_object(obj_god) < 64
+if distance_to_object(obj_god) < 32
 {
 	var gdir = point_direction(obj_god.x,obj_god.y,x,y)
-	global.mood--
+	global.mood-= 20
 	set_movement_direction_speed(gdir,13)
+	obj_god.dx = lengthdir_x(3,gdir+180)
+	obj_god.dy = lengthdir_y(3,gdir+180)
 }
 
-if distance_to_object(obj_devl) < 64
+if distance_to_object(obj_devl) < 32
 {
 	var gdir = point_direction(obj_devl.x,obj_devl.y,x,y)
-	global.mood--
+	global.mood-= 30
 	set_movement_direction_speed(gdir,13)
+	obj_devl.dx = lengthdir_x(4,gdir+180)
+	obj_devl.dy = lengthdir_y(4,gdir+180)
 }
 
 if (timer <= 0 and place_meeting(x,y+1,collision_object)) or place_meeting(x+hsp[1],y,collision_object) or place_meeting(x,y-1,collision_object)  
@@ -151,7 +155,7 @@ if global.mood > 40 and global.mood < 160
 
 if global.mood > 160
 {
-	walkspeed = 5
+	walkspeed = 6
 }
 
 if dashing {
