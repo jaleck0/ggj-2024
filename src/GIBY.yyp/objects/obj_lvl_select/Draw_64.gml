@@ -3,6 +3,6 @@
 draw_set_font(fnt_menu)
 for (i = 0; i < count; i++)
 {
-	draw_text(72,96+i*24,string(nameArray[i]))
+	draw_text(84,96+i*24,string(nameArray[i]))
 }
 draw_text(64,96+sel*24,">")

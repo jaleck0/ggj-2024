@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+if global.mood <= 0
+{
+	room_restart()
+	audio_stop_all()
+}
+
 if global.mood > 200
 {
 	global.mood = 200 
@@ -20,4 +26,11 @@ if global.mood > 0
 	}
 }
 
-camera_set_view_pos(view_camera[0], o_player.x-240, o_player.y-170)
+if room == rm_lvl_god or room == rm_lvl_devl
+{
+	camera_set_view_pos(view_camera[0], 0, 32);
+}
+else
+{
+	camera_set_view_pos(view_camera[0], o_player.x-240, o_player.y-170);
+}

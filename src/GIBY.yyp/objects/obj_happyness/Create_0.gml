@@ -3,5 +3,7 @@
 
 tracked = false
 
+range = 64
+
 dx = 0;
 dy = 0;

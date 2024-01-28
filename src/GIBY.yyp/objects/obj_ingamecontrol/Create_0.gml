@@ -35,3 +35,5 @@ global.const_deathmood = 0;
 global.const_neutralmood = 100;
 global.const_maxmood = 200;
 
+global.desiredmusic = snd_neutralmusic
+//audio_play_sound(global.desiredmusic,1,true)
