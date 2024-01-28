@@ -43,8 +43,9 @@ global.done[1,1] = false
 global.done[2,0] = false
 global.done[2,1] = false
 
-global.done[3,0] = false
-global.done[3,1] = false
+global.goddead = false
+global.devdead = false
+
 
 
 vwidth  = 480

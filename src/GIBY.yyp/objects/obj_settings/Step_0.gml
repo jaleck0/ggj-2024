@@ -36,6 +36,17 @@ if keyboard_check_pressed(ord("R")) {
 	game_restart();	
 }
 
+if keyboard_check_pressed(ord("P")) {
+	global.done[0,0] = true
+	global.done[0,1] = true
+
+	global.done[1,0] = true
+	global.done[1,1] = true
+
+	global.done[2,0] = true
+	global.done[2,1] = true
+}
+
 if keyboard_check_pressed(vk_f11)
 {
 	if window_get_fullscreen()

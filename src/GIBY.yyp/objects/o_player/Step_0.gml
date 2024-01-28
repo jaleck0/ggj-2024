@@ -93,6 +93,20 @@ if (global.RleftP or global.RrighttP) and weapon>0 and !firing
 	}
 }
 
+if distance_to_object(obj_god) < 64
+{
+	var gdir = point_direction(obj_god.x,obj_god.y,x,y)
+	global.mood--
+	set_movement_direction_speed(gdir,13)
+}
+
+if distance_to_object(obj_devl) < 64
+{
+	var gdir = point_direction(obj_devl.x,obj_devl.y,x,y)
+	global.mood--
+	set_movement_direction_speed(gdir,13)
+}
+
 if (timer <= 0 and place_meeting(x,y+1,collision_object)) or place_meeting(x+hsp[1],y,collision_object) or place_meeting(x,y-1,collision_object)  
 {
 	set_movement_gravity(0.5)

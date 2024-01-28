@@ -3,6 +3,6 @@
 
 global.done[levelnr, 1] = true
 audio_stop_all()
-room = rm_select
+room = rm_clear
 
 
