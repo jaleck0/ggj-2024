@@ -34,6 +34,18 @@ global.RdownR = 0
 
 global.deadzone = 0.7;
 
+global.done[0,0] = false
+global.done[0,1] = false
+
+global.done[1,0] = false
+global.done[1,1] = false
+
+global.done[2,0] = false
+global.done[2,1] = false
+
+global.done[3,0] = false
+global.done[3,1] = false
+
 
 vwidth  = 480
 vheight = 270

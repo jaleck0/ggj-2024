@@ -29,6 +29,7 @@ if !dashing
 }
 
 if (global.RleftP or global.RrighttP) and !(dashing) and dready and weapon=0 {
+	audio_play_sound(snd_dash,10,false)
 	vsp[0]=0
 	vsp[1]=0
 	hsp[0]=0
@@ -46,6 +47,7 @@ if (global.RleftP or global.RrighttP) and !(dashing) and dready and weapon=0 {
 
 if global.RdownP and !(dashing) and dready and weapon=0 and global.mood < 80 and !place_meeting(x,y+1,collision_object)
 {
+	audio_play_sound(snd_dash,10,false)
 	vsp[0]=0
 	vsp[1]=0
 	hsp[0]=0
@@ -65,6 +67,7 @@ if global.RdownP and !(dashing) and dready and weapon=0 and global.mood < 80 and
 //if mouse_check_button_pressed(mb_right) and weapon>0 
 if global.RdownP and weapon>0 
 {
+	audio_play_sound(snd_throwgun,10,false)
 	guna=instance_create_layer(x,y,layer,obj_throwgun)
 	guna.direction=dir+throwangleUp*flp
 	guna.speed=13
@@ -77,6 +80,7 @@ if global.RdownP and weapon>0
 
 if (global.RleftP or global.RrighttP) and weapon>0 and !firing 
 {
+	audio_play_sound(snd_shotgun,10,false)
 	firing=true
 	alarm[1]=firerate
 	add_particle(spr_flare,0,x+lengthdir_x(16,dir),y+lengthdir_y(16,dir),lengthdir_y(1,dir),lengthdir_y(1,dir),0,2,YELLOW1,1,true);
@@ -121,6 +125,20 @@ if place_meeting(x-1,y+1,obj_breakable) and pounding
 	pounding = false
 }
 
+if global.mood < 40
+{
+	walkspeed = 3
+}
+
+if global.mood > 40 and global.mood < 160
+{
+	walkspeed = 4
+}
+
+if global.mood > 160
+{
+	walkspeed = 5
+}
 
 if dashing {
 	sprite_index=spr_player_stealing;
@@ -130,7 +148,7 @@ if dashing {
 	pounding = false
 	// Enable platform movement actions
 	//enable_movement_platform_actions(.5, 4, 9, keyboard_check(ord("D")), keyboard_check(ord("A")), keyboard_check_pressed(vk_space), keyboard_check_released(vk_space));
-	enable_movement_platform_actions(.5, 4, 9, global.LrightH, global.LleftH, sign(global.RupP + global.LupP), sign(global.RupR + global.LupR));
+	enable_movement_platform_actions(.5, walkspeed, 9, global.LrightH, global.LleftH, sign(global.RupP + global.LupP), sign(global.RupR + global.LupR));
 	
 	if global.moodindex > MOODS.NEUTRAL
 	{

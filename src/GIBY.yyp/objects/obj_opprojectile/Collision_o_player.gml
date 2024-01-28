@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 global.mood -= 25
-
+audio_play_sound(snd_hit,10,false)
 if image_angle = 0
 {
 	with other

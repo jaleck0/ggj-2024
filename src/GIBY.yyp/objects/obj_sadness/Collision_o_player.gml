@@ -4,7 +4,7 @@ if global.mood > 40
 {
 	global.mood -= 10;
 }
-
+audio_play_sound(snd_pickupball,10,false)
 instance_destroy()
 
 

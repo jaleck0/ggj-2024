@@ -49,6 +49,7 @@ function move_movement_entity() {
 	        hsp[0] = 0;
 	        hsp[1] = -(hsp[1])*bounce;
 			if (abs(hsp[1]) > 1) {
+			audio_play_sound(snd_hitwhall,10,false)
 	        for (var i=0;i<=6;i++) {
 				add_particle(spr_part,0,x+6*sign(hsp[1]),y+random_range(-4,4),random(hsp[1])/2,random_range(-1,1),0,1+random(.5),global.moodcolors[global.moodindex,0],1,false);
 			} }
@@ -74,6 +75,7 @@ function move_movement_entity() {
 	    vsp[1] = -vsp[1]*bounce;
 		if (abs(vsp[1]) > 1) {
 	    for (var i=0;i<=6;i++) {
+			audio_play_sound(snd_hitwhall,10,false)
 			add_particle(spr_part,0,x+random_range(-4,4),y+14,random_range(-1,1),random(vsp[1])/2,0,1+random(.5),global.moodcolors[global.moodindex,0],1,false);
 		} }
 	    // Stop bounce at low values

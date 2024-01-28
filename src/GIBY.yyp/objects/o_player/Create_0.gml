@@ -5,6 +5,7 @@ flp = 1
 throwangleUp = 20
 pounding = false;
 
+walkspeed = 4
 
 dashing=false
 dready=true
