@@ -1,0 +1,5 @@
+TEAM BlackMesa
+
+members
+Lucas van Lippen - programmer artist
+Thomas Maly - Audio
