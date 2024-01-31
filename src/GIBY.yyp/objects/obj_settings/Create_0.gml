@@ -52,6 +52,7 @@ vwidth  = 480
 vheight = 270
 vscale = 2;
 
+display_set_gui_size(480,270)
 
 
 
